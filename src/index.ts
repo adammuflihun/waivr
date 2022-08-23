@@ -8,7 +8,7 @@ window.Webflow.push(() => {
 let myTimer;
 
 $('.link-card').on('click', function () {
-  $('.is--current').removeClass('is--current');
+  $('.wrapper-link .is--current').removeClass('is--current');
   $(this).addClass('is--current');
   let myIndex = $(this).index();
   // $('.app_img').eq(myIndex).addClass('is--current');
@@ -18,7 +18,7 @@ $('.link-card').on('click', function () {
 
 function runInterval() {
   myTimer = setInterval(function () {
-    let currentItems = $('.is--current');
+    let currentItems = $('.wrapper-link .is--current');
     if (currentItems.next().length > 0) {
       currentItems.next().addClass('is--current');
     } else {
@@ -33,7 +33,7 @@ runInterval();
 let myTimer2;
 
 $('.link-card2').on('click', function () {
-  $('.is--current').removeClass('is--current');
+  $('.wrapper-link2 .is--current').removeClass('is--current');
   $(this).addClass('is--current');
   let myIndex = $(this).index();
   // $('.app_img').eq(myIndex).addClass('is--current');
@@ -43,7 +43,7 @@ $('.link-card2').on('click', function () {
 
 function runInterval2() {
   myTimer2 = setInterval(function () {
-    let currentItems = $('.is--current');
+    let currentItems = $('.wrapper-link2 .is--current');
     if (currentItems.next().length > 0) {
       currentItems.next().addClass('is--current');
     } else {
