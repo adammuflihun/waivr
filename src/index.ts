@@ -19,7 +19,7 @@ $('.link-card').on('click', function () {
 function runInterval() {
   myTimer = setInterval(function () {
     let currentItems = $('.is--current');
-    if (currentItems.next().length > 0) {
+    if (currentItems.length > 0) {
       currentItems.next().addClass('is--current');
     } else {
       $('.link-card').eq(0).addClass('is--current');
