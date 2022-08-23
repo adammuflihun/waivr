@@ -11,7 +11,6 @@ $('.link-card').on('click', function () {
   $('.is--current').removeClass('is--current');
   $(this).addClass('is--current');
   let myIndex = $(this).index();
-  console.log(myIndex);
   // $('.app_img').eq(myIndex).addClass('is--current');
   clearInterval(myTimer);
   runInterval();
