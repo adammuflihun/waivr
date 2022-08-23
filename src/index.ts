@@ -29,3 +29,28 @@ function runInterval() {
   }, 5000);
 }
 runInterval();
+
+let myTimer2;
+
+$('.link-card2').on('click', function () {
+  $('.is--current').removeClass('is--current');
+  $(this).addClass('is--current');
+  let myIndex = $(this).index();
+  // $('.app_img').eq(myIndex).addClass('is--current');
+  clearInterval(myTimer2);
+  runInterval();
+});
+
+function runInterval2() {
+  myTimer2 = setInterval(function () {
+    let currentItems = $('.is--current');
+    if (currentItems.next().length > 0) {
+      currentItems.next().addClass('is--current');
+    } else {
+      $('.link-card2').eq(0).addClass('is--current');
+      // $('.app_img').eq(0).addClass('is--current');
+    }
+    currentItems.removeClass('is--current');
+  }, 5000);
+}
+runInterval2();
