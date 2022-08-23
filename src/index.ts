@@ -36,9 +36,10 @@ $('.link-card2').on('click', function () {
   $('.wrapper-link2 .is--current').removeClass('is--current');
   $(this).addClass('is--current');
   let myIndex = $(this).index();
+  // console.log(myIndex);
   // $('.app_img').eq(myIndex).addClass('is--current');
   clearInterval(myTimer2);
-  runInterval();
+  runInterval2n();
 });
 
 function runInterval2() {
