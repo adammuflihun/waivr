@@ -1,5 +1,6 @@
 import { gsapHome } from '$utils/gsapHome';
-import { inView } from '$utils/inview';
+
+// import { inView } from '$utils/inview';
 
 // import { motionDev } from '$utils/motionDev';
 
