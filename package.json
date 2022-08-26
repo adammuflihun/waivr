@@ -54,6 +54,7 @@
     "@finsweet/ts-utils": "^0.33.1",
     "gsap": "npm:@gsap/shockingly@^3.11.0",
     "jquery": "^3.6.0",
-    "motion": "^10.14.1"
+    "motion": "^10.14.1",
+    "react-script-tag": "^1.1.2"
   }
 }
