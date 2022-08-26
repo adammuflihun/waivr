@@ -52,7 +52,8 @@
   },
   "dependencies": {
     "@finsweet/ts-utils": "^0.33.1",
-    "gsap": "^3.11.0",
-    "jquery": "^3.6.0"
+    "gsap": "npm:@gsap/shockingly@^3.11.0",
+    "jquery": "^3.6.0",
+    "motion": "^10.14.1"
   }
 }

@@ -1,11 +1,14 @@
 import { gsapHome } from '$utils/gsapHome';
 
+// import { motionDev } from '$utils/motionDev';
+
 window.Webflow ||= [];
 window.Webflow.push(() => {
   console.log('mantap');
 });
 
 gsapHome();
+// motionDev();
 
 let myTimer;
 
