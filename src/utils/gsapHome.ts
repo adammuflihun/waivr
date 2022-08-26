@@ -14,7 +14,7 @@ export const gsapHome = () => {
     .to('.ball', 3.5, { scale: 9, y: '40vh', x: '100vw', ease: 'power4.out' }, 1);
 
   tlHeader
-    .from('.logo-waivr', { opacity: 0, y: 100, duration: 0.5 }, 0)
+    .from('.logo-waivr', { opacity: 0, duration: 0.5 }, 0)
     .from(
       '.navlink , .button',
       {
@@ -27,7 +27,7 @@ export const gsapHome = () => {
       0.5
     )
     .from(
-      '.wrap-section-header-1 h1 , p, .book-meeting',
+      '.wrap-section-header-1 h1 , .wrap-section-header-1 p, .wrap-section-header-1 .book-meeting',
       {
         opacity: 0,
         y: 100,

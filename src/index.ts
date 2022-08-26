@@ -1,7 +1,5 @@
 import { gsapHome } from '$utils/gsapHome';
 
-// import { inView } from '$utils/inview';
-
 // import { motionDev } from '$utils/motionDev';
 
 window.Webflow ||= [];
@@ -11,31 +9,6 @@ window.Webflow.push(() => {
 
 gsapHome();
 // motionDev();
-
-let myTimer;
-
-$('.link-card').on('click', function () {
-  $('.wrapper-link .is--current').removeClass('is--current');
-  $(this).addClass('is--current');
-  let myIndex = $(this).index();
-  // $('.app_img').eq(myIndex).addClass('is--current');
-  clearInterval(myTimer);
-  runInterval();
-});
-
-function runInterval() {
-  myTimer = setInterval(function () {
-    let currentItems = $('.wrapper-link .is--current');
-    if (currentItems.next().length > 0) {
-      currentItems.next().addClass('is--current');
-    } else {
-      $('.link-card').eq(0).addClass('is--current');
-      // $('.app_img').eq(0).addClass('is--current');
-    }
-    currentItems.removeClass('is--current');
-  }, 7000);
-}
-runInterval();
 
 let myTimer2;
 
@@ -62,3 +35,28 @@ function runInterval2() {
   }, 5000);
 }
 runInterval2();
+// element is now visible in the viewport
+let myTimer;
+
+$('.link-card').on('click', function () {
+  $('.wrapper-link .is--current').removeClass('is--current');
+  $(this).addClass('is--current');
+  let myIndex = $(this).index();
+  // $('.app_img').eq(myIndex).addClass('is--current');
+  clearInterval(myTimer);
+  runInterval();
+});
+
+function runInterval() {
+  myTimer = setInterval(function () {
+    let currentItems = $('.wrapper-link .is--current');
+    if (currentItems.next().length > 0) {
+      currentItems.next().addClass('is--current');
+    } else {
+      $('.link-card').eq(0).addClass('is--current');
+      // $('.app_img').eq(0).addClass('is--current');
+    }
+    currentItems.removeClass('is--current');
+  }, 7000);
+}
+runInterval();
