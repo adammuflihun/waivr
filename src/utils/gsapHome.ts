@@ -1,14 +1,17 @@
 import { gsap } from 'gsap';
+import { CustomBounce } from 'gsap/CustomBounce';
 import { CustomEase } from 'gsap/CustomEase';
 
 export const gsapHome = () => {
   gsap.registerPlugin(CustomEase, CustomBounce);
   var tlHeader = new gsap.timeline();
   var tlBall = new gsap.timeline();
-  // CustomBounce.create('myBounce', { strength: 0.7, squash: 3 });
+  CustomBounce.create('myBounce', { strength: 0.5, squash: 2 });
+  CustomBounce.create('myBounceH', { strength: 0.2 });
+
   tlBall
-    .to('.ball', 2.5, { scale: 4, y: '104vh', x: '35vw' })
-    .to('.ball', 2, { scale: 7, y: '40vh', x: '100vw' }, 1);
+    .to('.ball', 3, { scale: 7, y: '165vh', x: '50vw', ease: 'myBounce' })
+    .to('.ball', 3.5, { scale: 9, y: '40vh', x: '100vw', ease: 'power4.out' }, 1);
 
   tlHeader
     .from('.logo-waivr', { opacity: 0, y: 100, duration: 0.5 }, 0)
@@ -31,6 +34,6 @@ export const gsapHome = () => {
         duration: 0.5,
         stagger: 0.07,
       },
-      1.3
+      1
     );
 };

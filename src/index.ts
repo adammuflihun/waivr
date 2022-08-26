@@ -1,4 +1,5 @@
 import { gsapHome } from '$utils/gsapHome';
+import { inView } from '$utils/inview';
 
 // import { motionDev } from '$utils/motionDev';
 
@@ -31,7 +32,7 @@ function runInterval() {
       // $('.app_img').eq(0).addClass('is--current');
     }
     currentItems.removeClass('is--current');
-  }, 5000);
+  }, 7000);
 }
 runInterval();
 
@@ -44,7 +45,7 @@ $('.link-card2').on('click', function () {
   // console.log(myIndex);
   // $('.app_img').eq(myIndex).addClass('is--current');
   clearInterval(myTimer2);
-  runInterval2n();
+  runInterval2();
 });
 
 function runInterval2() {
