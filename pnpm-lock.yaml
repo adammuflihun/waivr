@@ -15,17 +15,21 @@ specifiers:
   eslint: ^8.21.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-prettier: ^4.2.1
-  gsap: ^3.11.0
+  gsap: npm:@gsap/shockingly@^3.11.0
   jquery: ^3.6.0
+  jquery-inview: ^1.1.2
   motion: ^10.14.1
   prettier: ^2.7.1
+  react-script-tag: ^1.1.2
   typescript: ^4.7.4
 
 dependencies:
   '@finsweet/ts-utils': 0.33.1
-  gsap: 3.11.0
+  gsap: /@gsap/shockingly/3.11.0
   jquery: 3.6.0
+  jquery-inview: 1.1.2
   motion: 10.14.1
+  react-script-tag: 1.1.2
 
 devDependencies:
   '@changesets/changelog-git': 0.1.12
@@ -533,6 +537,10 @@ packages:
   /@finsweet/tsconfig/1.1.0:
     resolution: {integrity: sha512-P+cceRLc4wzcN3YfTCMqOQ1SfrxIFcMvC1lzgl8rd021ZcCNkdiOYlPkpZSL1lzDt2+9k4wFq4OUFcxALdOOsQ==}
     dev: true
+
+  /@gsap/shockingly/3.11.0:
+    resolution: {integrity: sha512-1EeF2zov6PTDpW8dQI0NdWkhukowHOWV93IhX8vZDUFtf9xh+P54JfCNTa1kBCEQQYkBNRGqCgI9IEcRh25ZVw==}
+    dev: false
 
   /@humanwhocodes/config-array/0.10.4:
     resolution: {integrity: sha512-mXAIHxZT3Vcpg83opl1wGlVZ9xydbfZO3r5YfRSH6Gpp2J/PfdBP0wbDa2sO6/qRbcalpoevVyW6A/fI6LfeMw==}
@@ -1875,10 +1883,6 @@ packages:
     resolution: {integrity: sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==}
     dev: true
 
-  /gsap/3.11.0:
-    resolution: {integrity: sha512-TV5aFGqXht+0o/CelnhCikSe3QGeG+q1XA/fyFFsMzesILHgWgFWIz0NuXIgcMaL5h7MG2l+j0BTupS5YyYkrw==}
-    dev: false
-
   /hard-rejection/2.1.0:
     resolution: {integrity: sha512-VIZB+ibDhx7ObhAe7OVtoEbuP4h/MuOTHJ+J8h/eBXotJYl0fBgR72xDFCKgIh22OJZIOVNxBMWuhAr10r8HdA==}
     engines: {node: '>=6'}
@@ -2120,6 +2124,10 @@ packages:
   /javascript-natural-sort/0.7.1:
     resolution: {integrity: sha1-+eIwPUUH9tdDVac2ZNFED7Wg71k=}
     dev: true
+
+  /jquery-inview/1.1.2:
+    resolution: {integrity: sha512-RS6WOVzlCklmJ4H44Iy1QhCZGWc+oA08Gli8noH/ZHXhjOVZUT4liQdmgh1fyYC6zNBhCUt1lsoWBDhcFAIegg==}
+    dev: false
 
   /jquery/3.6.0:
     resolution: {integrity: sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==}
@@ -2553,6 +2561,12 @@ packages:
     resolution: {integrity: sha512-ARhCpm70fzdcvNQfPoy49IaanKkTlRWF2JMzqhcJbhSFRZv7nPTvZJdcY7301IPmvW+/p0RgIWnQDLJxifsQ7g==}
     engines: {node: '>=8'}
     dev: true
+
+  /react-script-tag/1.1.2:
+    resolution: {integrity: sha512-4oR9ntvGfX4igiP77vK310ru5Oa77xO7CeYB3Xi9lu0qsikpGpK1Kq1WMFocvy8U4fQFq8ovtrZS/8adfCziFw==}
+    peerDependencies:
+      react: ^16.0.0
+    dev: false
 
   /read-pkg-up/7.0.1:
     resolution: {integrity: sha512-zK0TB7Xd6JpCLmlLmufqykGE+/TlOePD6qKClNW7hHDKFh/J7/7gCWGR7joEQEW1bKq3a3yUZSObOoWLFQ4ohg==}
