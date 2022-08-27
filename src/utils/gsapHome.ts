@@ -10,7 +10,7 @@ export const gsapHome = () => {
   CustomBounce.create('myBounceH', { strength: 0.2 });
 
   tlBall
-    .to('.ball', 3, { scale: 7, y: '165vh', x: '50vw', ease: 'myBounce' })
+    .to('.ball', 3, { scale: 7, y: '165vh', x: '60vw', ease: 'myBounce' })
     .to('.ball', 3.5, { scale: 9, y: '40vh', x: '110vw', ease: 'power4.out' }, 1);
 
   tlHeader
