@@ -11,7 +11,7 @@ export const gsapHome = () => {
 
   tlBall
     .to('.ball', 3, { scale: 7, y: '165vh', x: '50vw', ease: 'myBounce' })
-    .to('.ball', 3.5, { scale: 9, y: '40vh', x: '100vw', ease: 'power4.out' }, 1);
+    .to('.ball', 3.5, { scale: 9, y: '40vh', x: '110vw', ease: 'power4.out' }, 1);
 
   tlHeader
     .from('.logo-waivr', { opacity: 0, duration: 0.5 }, 0)
