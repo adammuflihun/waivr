@@ -11,7 +11,7 @@ export const gsapHome = () => {
   CustomBounce.create('myBounceH', { strength: 0.2 });
 
   tlBall
-    .to('.ball', 3, { scale: 7, y: '128vh', x: '60vw', ease: 'myBounce' })
+    .to('.ball', 3, { scale: 7, y: '165vh', x: '60vw', ease: 'myBounce' })
     .to('.section-header', { backgroundColor: '#232AE2' }, 1)
     .to('.gsap-color-white', { color: 'white', fill: 'white' }, 1)
     .to('.gsap-color-yellow', { fill: '#E2FF62' }, 1)
@@ -32,6 +32,54 @@ export const gsapHome = () => {
       stagger: 0.07,
       scrollTrigger: {
         trigger: '.section-transact-2',
+        toggleActions: 'play none none none',
+        start: 'top 80%',
+      },
+    },
+    1
+  );
+
+  gsap.from(
+    '.grid-how-it-works h2, .block-how-it-works .title-block-how-it-works,  .block-how-it-works .title-how-it-works-block, .block-how-it-works .wrapper-link , .block-how-it-works',
+    {
+      opacity: 0,
+      y: 100,
+      duration: 0.5,
+      stagger: 0.07,
+      scrollTrigger: {
+        trigger: '.grid-how-it-works',
+        toggleActions: 'play none none none',
+        start: 'top 80%',
+      },
+    },
+    1
+  );
+
+  gsap.from(
+    '.section-backed-by .title-backed-by, .logo-backed-by img',
+    {
+      opacity: 0,
+      y: 100,
+      duration: 0.5,
+      stagger: 0.07,
+      scrollTrigger: {
+        trigger: '.section-backed-by',
+        toggleActions: 'play none none none',
+        start: 'top 80%',
+      },
+    },
+    1
+  );
+
+  gsap.from(
+    '.footer-social-link a, .footer-text ,.footer-social-link p, .footer-link-wrapper a ',
+    {
+      opacity: 0,
+      y: 100,
+      duration: 0.5,
+      stagger: 0.07,
+      scrollTrigger: {
+        trigger: '.section-footer',
         toggleActions: 'play none none none',
         start: 'top 80%',
       },
