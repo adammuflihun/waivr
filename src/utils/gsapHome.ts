@@ -1,17 +1,43 @@
 import { gsap } from 'gsap';
 import { CustomBounce } from 'gsap/CustomBounce';
 import { CustomEase } from 'gsap/CustomEase';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 export const gsapHome = () => {
-  gsap.registerPlugin(CustomEase, CustomBounce);
+  gsap.registerPlugin(CustomEase, CustomBounce, ScrollTrigger);
   var tlHeader = new gsap.timeline();
   var tlBall = new gsap.timeline();
   CustomBounce.create('myBounce', { strength: 0.5, squash: 2 });
   CustomBounce.create('myBounceH', { strength: 0.2 });
 
   tlBall
-    .to('.ball', 3, { scale: 7, y: '165vh', x: '60vw', ease: 'myBounce' })
-    .to('.ball', 3.5, { scale: 9, y: '40vh', x: '110vw', ease: 'power4.out' }, 1);
+    .to('.ball', 3, { scale: 7, y: '128vh', x: '60vw', ease: 'myBounce' })
+    .to('.section-header', { backgroundColor: '#232AE2' }, 1)
+    .to('.gsap-color-white', { color: 'white', fill: 'white' }, 1)
+    .to('.gsap-color-yellow', { fill: '#E2FF62' }, 1)
+    .to('.ball', { backgroundColor: '#E2FF62' }, 0.8)
+    .to(
+      '.ball',
+      3.5,
+      { scale: 9, y: '40vh', x: '110vw', ease: 'power4.out', backgroundColor: '#E2FF62' },
+      1
+    );
+
+  gsap.from(
+    '.section-transact-1 h2, .section-transact-1 .paragraph-small, .block-grid-transact .wrap-block-grid-transact, .block-grid-transact h3, .block-grid-transact .paragraph-small',
+    {
+      opacity: 0,
+      y: 100,
+      duration: 0.5,
+      stagger: 0.07,
+      scrollTrigger: {
+        trigger: '.section-transact-2',
+        toggleActions: 'play none none none',
+        start: 'top 80%',
+      },
+    },
+    1
+  );
 
   tlHeader
     .from('.logo-waivr', { opacity: 0, duration: 0.5 }, 0)
