@@ -10,6 +10,7 @@ export const gsapHome = () => {
   CustomBounce.create('myBounce', { strength: 0.5, squash: 2 });
   CustomBounce.create('myBounceH', { strength: 0.2 });
 
+  gsap.to('.section-header', { autoAlpha: 1, duration: 0 });
   tlBall
     .to('.ball', 3, { scale: 7, y: '165vh', x: '60vw', ease: 'myBounce' })
     .to('.section-header', { backgroundColor: '#232AE2' }, 1)
@@ -27,6 +28,7 @@ export const gsapHome = () => {
     '.section-transact-1 h2, .section-transact-1 .paragraph-small, .block-grid-transact .wrap-block-grid-transact, .block-grid-transact h3, .block-grid-transact .paragraph-small',
     {
       opacity: 0,
+      autoAlpha: 1,
       y: 100,
       duration: 0.5,
       stagger: 0.07,
@@ -45,6 +47,7 @@ export const gsapHome = () => {
       opacity: 0,
       y: 100,
       duration: 0.5,
+      autoAlpha: 1,
       stagger: 0.07,
       scrollTrigger: {
         trigger: '.grid-how-it-works',
@@ -60,6 +63,7 @@ export const gsapHome = () => {
     {
       opacity: 0,
       y: 100,
+      autoAlpha: 1,
       duration: 0.5,
       stagger: 0.07,
       scrollTrigger: {
@@ -76,6 +80,7 @@ export const gsapHome = () => {
     {
       opacity: 0,
       y: 100,
+      autoAlpha: 1,
       duration: 0.5,
       stagger: 0.07,
       scrollTrigger: {
@@ -94,6 +99,7 @@ export const gsapHome = () => {
       {
         delay: 0.5,
         opacity: 0,
+        autoAlpha: 1,
         y: 100,
         duration: 0.5,
         stagger: 0.07,
@@ -104,6 +110,7 @@ export const gsapHome = () => {
       '.wrap-section-header-1 h1 , .wrap-section-header-1 p, .wrap-section-header-1 .book-meeting',
       {
         opacity: 0,
+        autoAlpha: 1,
         y: 100,
         duration: 0.5,
         stagger: 0.07,
