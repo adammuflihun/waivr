@@ -1,0 +1,5 @@
+---
+"@adambagusm/waivr": major
+---
+
+okay

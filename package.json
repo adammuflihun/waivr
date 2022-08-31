@@ -1,14 +1,11 @@
 {
-  "name": "@finsweet/developer-starter",
+  "name": "@adambagusm/waivr",
   "version": "1.0.0",
   "description": "Developer starter template for Finsweet projects.",
   "homepage": "https://github.com/finsweet/developer-starter#readme",
   "license": "ISC",
   "keywords": [],
-  "author": {
-    "name": "Finsweet",
-    "url": "https://www.finsweet.com/"
-  },
+  "author": "Finsweet (https://www.finsweet.com/)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/finsweet/developer-starter.git"
@@ -57,5 +54,11 @@
     "jquery-inview": "^1.1.2",
     "motion": "^10.14.1",
     "react-script-tag": "^1.1.2"
+  },
+  "bin": {
+    "waivr": "bin/build.js"
+  },
+  "directories": {
+    "test": "tests"
   }
 }
