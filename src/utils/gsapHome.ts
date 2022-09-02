@@ -18,7 +18,7 @@ export const gsapHome = () => {
     })
     .to('.ball', 3, {
       scale: 0.5,
-      y: '165vh',
+      y: '160vh',
       x: '60vw',
       ease: 'myBounce',
       force3D: false,
