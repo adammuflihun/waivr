@@ -12,12 +12,12 @@ export const gsapHome = () => {
 
   gsap.to('.section-header', { autoAlpha: 1, duration: 0 });
   tlBall
-    .to('.ball', 3, { scale: 7, y: '165vh', x: '60vw', ease: 'myBounce' })
+    .to('.ball', 3, { scale: 7, y: '165vh', x: '60vw', ease: 'myBounce', force3D: false })
     // .to('.section-header', { backgroundColor: '#436EF2' }, 1)
     // .to('.gsap-color-white', { color: 'white', fill: 'white' }, 1)
     // .to('.gsap-color-yellow', { fill: '#E2FF62' }, 1)
     // .to('.ball', { backgroundColor: '#E2FF62' }, 0.8)
-    .to('.ball', 3.5, { scale: 9, y: '40vh', x: '110vw', ease: 'power4.out' }, 1);
+    .to('.ball', 3.5, { scale: 9, y: '40vh', x: '110vw', ease: 'power4.out', force3D: false }, 1);
 
   gsap.from(
     '.section-transact-1 h2, .section-transact-1 .paragraph-small, .block-grid-transact .wrap-block-grid-transact, .block-grid-transact h3, .block-grid-transact .paragraph-small',
