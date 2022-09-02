@@ -13,7 +13,7 @@ export const gsapHome = () => {
   gsap.to('.section-header', { autoAlpha: 1, duration: 0 });
   tlBall
     .to('.ball', 3, { scale: 7, y: '165vh', x: '60vw', ease: 'myBounce' })
-    .to('.section-header', { backgroundColor: '#232AE2' }, 1)
+    .to('.section-header', { backgroundColor: '#436EF2' }, 1)
     .to('.gsap-color-white', { color: 'white', fill: 'white' }, 1)
     .to('.gsap-color-yellow', { fill: '#E2FF62' }, 1)
     .to('.ball', { backgroundColor: '#E2FF62' }, 0.8)
