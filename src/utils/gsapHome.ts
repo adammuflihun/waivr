@@ -30,7 +30,7 @@ export const gsapHome = () => {
     .to('.ball', 3.5, { scale: 1, y: '40vh', x: '110vw', ease: 'power4.out', force3D: false }, 1);
 
   gsap.from(
-    '.section-transact-1 h2, .section-transact-1 .paragraph-small, .block-grid-transact .wrap-block-grid-transact, .block-grid-transact h3, .block-grid-transact .paragraph-small',
+    '.section-transact-1 h2, .text-block-34 .section-transact-1 .paragraph-small, .block-grid-transact .wrap-block-grid-transact, .block-grid-transact h3, .block-grid-transact .paragraph-small',
     {
       opacity: 0,
       autoAlpha: 1,
