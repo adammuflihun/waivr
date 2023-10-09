@@ -27,10 +27,10 @@ export const gsapHome = () => {
     // .to('.gsap-color-white', { color: 'white', fill: 'white' }, 1)
     // .to('.gsap-color-yellow', { fill: '#E2FF62' }, 1)
     // .to('.ball', { backgroundColor: '#E2FF62' }, 0.8)
-    .to('.section-transact-1 h2, .section-transact-1 .paragraph-small, .block-grid-transact .wrap-block-grid-transact, .block-grid-transact h3, .block-grid-transact .paragraph-small', 3.5, { scale: 1, y: '40vh', x: '110vw', ease: 'power4.out', force3D: false }, 1);
+    .to('.ball', 3.5, { scale: 1, y: '40vh', x: '110vw', ease: 'power4.out', force3D: false }, 1);
 
   
-    gsap.set("#myElement", {opacity: 0});
+    gsap.set(".section-transact-1 h2, .section-transact-1 .paragraph-small, .block-grid-transact .wrap-block-grid-transact, .block-grid-transact h3, .block-grid-transact .paragraph-small", {opacity: 0});
   
   gsap.from(
     '.section-transact-1 h2, .section-transact-1 .paragraph-small, .block-grid-transact .wrap-block-grid-transact, .block-grid-transact h3, .block-grid-transact .paragraph-small',
